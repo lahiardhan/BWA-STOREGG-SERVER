@@ -38,7 +38,7 @@ module.exports = {
    
          res.status(200).json({ 
             data: {
-               details: voucher,
+               detail: voucher,
                payment
             }
           })
