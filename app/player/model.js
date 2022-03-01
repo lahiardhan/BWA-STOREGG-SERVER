@@ -44,7 +44,7 @@ let playerSchema = mongoose.Schema({
       maxlength: [13, 'Panjang Nomor Telepon Minimal Sepanjang 9-13 Karakter'],
       minlength: [9, 'Panjang Nomor Telepon Minimal Sepanjang 9-13 Karakter'],
    }, 
-   favorit: {
+   favorite: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Category'
    }
