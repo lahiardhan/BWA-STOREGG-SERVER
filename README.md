@@ -1,3 +1,3 @@
 # BWA-STOREGG-SERVER
 
-Built using ExpressJS and MongoDB
+This is a server side web Built using ExpressJS and MongoDB
