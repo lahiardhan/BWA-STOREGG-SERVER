@@ -14,7 +14,6 @@ let userSchema = mongoose.Schema({
    },
    phoneNumber: {
       type: String,
-      required: [true, 'Nomor Telepon Harus Diisi!']
    },
    role: {
       type: String,
