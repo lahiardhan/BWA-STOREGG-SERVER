@@ -58,6 +58,15 @@ playerSchema.path('email').validate(async function (value) {
    }
 }, attr => `${attr.value} sudah terdaftar`)
 
+playerSchema.path('username').validate(async function (value) {
+   try {
+      const count = await this.model('Player').countDocuments({ username : value })
+      return !count;
+   } catch (err) {
+      throw err
+   }
+}, attr => `${attr.value} sudah terdaftar`)
+
 playerSchema.pre('save', function (next) {
    this.password = brcypt.hashSync(this.password, HASH_ROUND)
    next()
